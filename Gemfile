@@ -71,4 +71,5 @@ group :test do
   gem "webdrivers"
 end
 
+gem 'devise'
 gem "hotwire-rails", "~> 0.1.3"
