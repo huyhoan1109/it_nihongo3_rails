@@ -1,4 +1,6 @@
 <h1>This is home</h1>
+<%= link_to "Look for book", books_path%>
+<br>
 <% if user_signed_in? %>
 <%= current_user.email %>
 <br>
