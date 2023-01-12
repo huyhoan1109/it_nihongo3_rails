@@ -10,17 +10,22 @@
       </ul>
     </div>
   <% end %>
-
+  <br>
   <div>
-    <%= form.label :title, style: "display: block" %>
+    <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
-
+  <br>
   <div>
-    <%= form.label :number_of_pages, style: "display: block" %>
+    <%= form.label :number_of_pages %>
     <%= form.number_field :number_of_pages %>
   </div>
-
+  <br>
+  <div>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+  <br>
   <div>
     <%= form.submit %>
   </div>
