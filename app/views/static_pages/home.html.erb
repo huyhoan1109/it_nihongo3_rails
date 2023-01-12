@@ -1,12 +1,12 @@
-<h1>This is home</h1>
-<%= link_to "Look for book", books_path%>
-<br>
+<%= link_to "ホーム", href="/" %>
 <% if user_signed_in? %>
-<%= current_user.email %>
 <br>
-<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+<a>こんにちは　<%= link_to current_user.email,  href="/users/show"%></a>
 <br>
+<%= link_to "サインアウト", destroy_user_session_path, :method => :delete %>
 <% else %>
-<%= link_to "Sign in", new_user_session_path %>
-<%= link_to "Sign up", new_user_registration_path %>
+<%= link_to "ログイン", new_user_session_path %>
+<%= link_to "サインアップ", new_user_registration_path %>
 <% end %>
+<h1>ホームページ</h1>
+<%= link_to "本を見る", books_path%>
