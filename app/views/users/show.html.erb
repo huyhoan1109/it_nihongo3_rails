@@ -1,3 +1,13 @@
 <h1>プロフィール</h1>
 
-<h3>メールアドレス: <%= current_user.email %></h3>
+<h3>メールアドレス: <%= @user.email %></h3>
+<br>
+<% if @user.avatar.attached? %>
+<h3>アヴァター:</h3>
+<%= image_tag @user.avatar %>
+<br>
+<% end %>
+<h3>名前: <%= @user.name %></h3>
+<br>
+<h3>年齢: <%= @user.age %></h3>
+<br>
